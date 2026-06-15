@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>MaisonCart | Privacy Policy</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fefaf5;
+      color: #1e1a17;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* header */
+    .site-header {
+      background-color: #ffffffdd;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #f0e4d8;
+      padding: 16px 0;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo a {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      background: linear-gradient(135deg, #b57c48, #6e3b1c);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2c241f;
+      transition: color 0.2s;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #b45a2b;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-icons button {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: #2c241f;
+      transition: transform 0.1s ease;
+    }
+
+    .header-icons button:hover {
+      transform: scale(1.05);
+      color: #b45a2b;
+    }
+
+    /* privacy main content */
+    .privacy-main {
+      flex: 1;
+      padding: 60px 0 80px;
+    }
+
+    .privacy-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .privacy-header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #2b211c, #6e3b1c);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.01em;
+    }
+
+    .privacy-header .last-updated {
+      color: #8b735f;
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+
+    .privacy-card {
+      background: white;
+      border-radius: 32px;
+      padding: 48px 52px;
+      box-shadow: 0 15px 35px -15px rgba(0,0,0,0.05);
+      border: 1px solid #f0e2d8;
+    }
+
+    .privacy-section {
+      margin-bottom: 40px;
+    }
+
+    .privacy-section h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #2c241f;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f0e2d8;
+    }
+
+    .privacy-section h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #a7582a;
+      margin: 20px 0 10px 0;
+    }
+
+    .privacy-section p {
+      line-height: 1.6;
+      color: #3e332c;
+      margin-bottom: 14px;
+    }
+
+    .privacy-section ul, .privacy-section ol {
+      margin: 12px 0 16px 28px;
+      color: #3e332c;
+      line-height: 1.6;
+    }
+
+    .privacy-section li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: #fef6f0;
+      border-left: 4px solid #b5672e;
+      padding: 20px 24px;
+      border-radius: 18px;
+      margin: 24px 0;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: #fefaf5;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .data-table th, .data-table td {
+      border: 1px solid #f0e2d8;
+      padding: 12px 16px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      background: #f5ede5;
+      font-weight: 600;
+      color: #2c241f;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 40px;
+      color: #a7582a;
+      text-decoration: none;
+      font-weight: 500;
+      transition: gap 0.2s;
+    }
+
+    .back-link:hover {
+      gap: 12px;
+      color: #6e3b1c;
+    }
+
+    /* footer */
+    .footer {
+      background: #1e1612;
+      color: #ddd0c8;
+      padding: 48px 0 32px;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .footer-col p {
+      margin: 12px 0;
+    }
+
+    .footer-col h4 {
+      color: #f5e2d6;
+      margin-bottom: 14px;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #30221c;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 800px) {
+      .privacy-card {
+        padding: 32px 24px;
+      }
+      .privacy-header h1 {
+        font-size: 2rem;
+      }
+      .nav-links {
+        gap: 20px;
+      }
+      .header-inner {
+        justify-content: center;
+      }
+      .data-table th, .data-table td {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="#">MaisonCart</a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="header-icons">
+      <button aria-label="Search">🔍</button>
+      <button aria-label="Account">👤</button>
+      <button aria-label="Cart">🛒<span style="font-size:0.7rem; margin-left:4px;">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="privacy-main">
+  <div class="container">
+    <div class="privacy-header">
+      <h1>Privacy Policy</h1>
+      <div class="last-updated">Last updated: June 12, 2026</div>
+    </div>
+
+    <div class="privacy-card">
+      <div class="privacy-section">
+        <h2>1. Our Commitment to Privacy</h2>
+        <p>At MaisonCart ("we," "us," "our"), your privacy is a cornerstone of our brand. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <strong>www.maisoncart.com</strong> (the "Site"), make a purchase, or interact with our services. We are committed to handling your personal data with transparency, care, and respect — just like the artisan pieces we curate.</p>
+        <p>By using the Site, you consent to the data practices described in this policy. If you do not agree, please discontinue use of our services.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>2. Information We Collect</h2>
+        <p>We collect information that you voluntarily provide to us, as well as certain data automatically when you browse our Site.</p>
+        
+        <h3>Personal Information You Provide</h3>
+        <ul>
+          <li><strong>Account & Order Information:</strong> Name, email address, phone number, billing/shipping address, payment details (processed securely by third-party gateways).</li>
+          <li><strong>Communications:</strong> Messages, reviews, survey responses, or customer support inquiries.</li>
+          <li><strong>Marketing Preferences:</strong> Subscription choices and promotional interactions.</li>
+        </ul>
+
+        <h3>Automatically Collected Information</h3>
+        <ul>
+          <li><strong>Device & Usage Data:</strong> IP address, browser type, operating system, referring URLs, pages visited, time spent, and clickstream data.</li>
+          <li><strong>Cookies & Tracking Technologies:</strong> We use cookies, web beacons, and similar tools to enhance your experience and analyze site traffic. See Section 7 for more details.</li>
+        </ul>
+
+        <div class="highlight-box">
+          <strong>🔒 Sensitive Data:</strong> We do not intentionally collect sensitive personal information (e.g., health data, genetic data). If you provide such information voluntarily (e.g., in product reviews), it becomes visible according to your sharing settings.
+        </div>
+      </div>
+
+      <div class="privacy-section">
+        <h2>3. How We Use Your Information</h2>
+        <p>MaisonCart uses your personal data for legitimate business purposes, including:</p>
+        <ul>
+          <li><strong>Order Fulfillment:</strong> Processing payments, shipping, returns, and providing order updates.</li>
+          <li><strong>Customer Support:</strong> Responding to inquiries, resolving issues, and improving service quality.</li>
+          <li><strong>Personalization:</strong> Tailoring product recommendations, content, and advertising based on your interests.</li>
+          <li><strong>Marketing & Communications:</strong> Sending newsletters, promotions, and surveys (you may opt out at any time).</li>
+          <li><strong>Site Improvement:</strong> Analyzing usage trends to enhance functionality, security, and user experience.</li>
+          <li><strong>Legal Compliance:</strong> Detecting fraud, enforcing our Terms & Conditions, and complying with applicable laws.</li>
+        </ul>
+      </div>
+
+      <div class="privacy-section">
+        <h2>4. Sharing & Disclosure of Information</h2>
+        <p>We do not sell your personal information to third parties. However, we may share data in the following circumstances:</p>
+        <ul>
+          <li><strong>Service Providers:</strong> Trusted partners who assist with payment processing (Stripe, PayPal), shipping (UPS, DHL, USPS), email marketing (Klaviyo), and analytics (Google Analytics). These parties are contractually obligated to protect your data.</li>
+          <li><strong>Legal Obligations:</strong> If required by law, court order, or governmental authority to protect our rights, property, or safety.</li>
+          <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or asset sale, your information may be transferred as part of the transaction. We will notify you of any such change.</li>
+          <li><strong>With Your Consent:</strong> For any other purpose disclosed at the time of data collection.</li>
+        </ul>
+        <table class="data-table">
+          <thead>
+            <tr><th>Category of Data</th><th>Recipients</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Order details (name, address, payment)</td><td>Stripe, PayPal, shipping carriers</td><td>Payment processing & delivery</td></tr>
+            <tr><td>Email & preferences</td><td>Email service provider</td><td>Marketing newsletters & order updates</td></tr>
+            <tr><td>Browsing behavior (cookies)</td><td>Google Analytics, Meta (Facebook)</td><td>Analytics & personalized ads</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="privacy-section">
+        <h2>5. Data Retention</h2>
+        <p>We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law. For example:</p>
+        <ul>
+          <li>Order records: retained for 7 years to comply with tax and accounting regulations.</li>
+          <li>Account information: retained until you request deletion or after a period of inactivity (3 years).</li>
+          <li>Marketing data: retained until you unsubscribe or withdraw consent.</li>
+        </ul>
+      </div>
+
+      <div class="privacy-section">
+        <h2>6. Your Privacy Rights & Choices</h2>
+        <p>Depending on your location (e.g., EU under GDPR, California under CCPA/CPRA), you may have specific rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Access & Portability:</strong> Request a copy of your personal data we hold.</li>
+          <li><strong>Correction:</strong> Update inaccurate or incomplete information.</li>
+          <li><strong>Deletion:</strong> Request erasure of your data, subject to legal exceptions (e.g., pending transactions).</li>
+          <li><strong>Opt-Out of Sales/Sharing:</strong> We do not sell data, but you may opt out of targeted advertising via cookie settings.</li>
+          <li><strong>Restrict or Object:</strong> Limit how we process your data in certain circumstances.</li>
+        </ul>
+        <p>To exercise your rights, please contact us at <strong>privacy@maisoncart.com</strong>. We will respond within 30 days. You may also adjust marketing preferences by clicking "unsubscribe" in our emails.</p>
+        <div class="highlight-box">
+          <strong>🍪 Cookie Controls:</strong> Most browsers allow you to block or delete cookies. However, disabling essential cookies may affect site functionality.
+        </div>
+      </div>
+
+      <div class="privacy-section">
+        <h2>7. Cookies & Tracking Technologies</h2>
+        <p>We use cookies (small text files stored on your device) to improve your browsing experience, remember cart items, and analyze site traffic. Categories include:</p>
+        <ul>
+          <li><strong>Essential Cookies:</strong> Required for basic site functions (e.g., shopping cart, login).</li>
+          <li><strong>Performance Cookies:</strong> Collect anonymized data to improve site performance.</li>
+          <li><strong>Functional Cookies:</strong> Remember preferences like language or region.</li>
+          <li><strong>Targeting/Advertising Cookies:</strong> Deliver relevant ads on third-party platforms.</li>
+        </ul>
+        <p>You can manage cookie preferences via our cookie consent banner or your browser settings. Third-party services (e.g., Google, Meta) may also place cookies. We do not control these external technologies.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>8. Security Measures</h2>
+        <p>MaisonCart implements industry-standard security safeguards to protect your data, including SSL encryption for all transactions, firewalls, and restricted access to personal information. While no method of transmission over the Internet is 100% secure, we continuously update our protocols. In the unlikely event of a data breach, we will notify affected users and relevant authorities as required by law.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>9. International Data Transfers</h2>
+        <p>Our headquarters are in the United States, but we serve customers worldwide. If you access our Site from outside the US, your information may be transferred to and processed in the US or other countries where our service providers operate. We ensure adequate protections (e.g., Standard Contractual Clauses) where required by law, such as for EU residents.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>10. Children's Privacy</h2>
+        <p>MaisonCart does not knowingly collect personal information from children under the age of 13. If you believe a child has provided us with data, please contact us immediately, and we will take steps to delete such information.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>11. Third-Party Links</h2>
+        <p>The Site may contain links to external websites (e.g., social media, payment partners). We are not responsible for the privacy practices or content of those third parties. We encourage you to read their privacy policies.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>12. Changes to This Privacy Policy</h2>
+        <p>We may update this policy periodically to reflect changes in our practices or legal requirements. The "Last updated" date at the top indicates the latest revision. We will notify you of material changes via email or a prominent notice on the Site. Your continued use after changes constitutes acceptance of the revised policy.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>13. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data handling, please reach out to our Data Protection Officer (DPO):</p>
+        <p>📧 <strong>privacy@maisoncart.com</strong><br>
+        📞 +1 (212) 555-8970 (Monday–Friday, 9am–5pm EST)<br>
+        🏢 MaisonCart Privacy Office, 310 Bowery, New York, NY 10012, USA</p>
+        <p>For EU residents, you also have the right to lodge a complaint with your local supervisory authority.</p>
+      </div>
+
+      <a href="#" class="back-link" id="backToHome">← Back to MaisonCart homepage</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>MaisonCart</h4>
+      <p>Timeless design for modern living.</p>
+    </div>
+    <div class="footer-col">
+      
+  </div>
+  <div class="container copyright">
+    <p>© 2026 MaisonCart — All rights reserved. Elegance, ethically crafted.</p>
+  </div>
+</footer>
+
+<script>
+  // Simple interactive: back button redirect to homepage (demo behavior)
+  const backBtn = document.getElementById('backToHome');
+  if (backBtn) {
+    backBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      // In a live environment, this would redirect to the main index page
+      // For demo, show a friendly message and simulate navigation
+      alert('✨ Returning to MaisonCart home. In a production site, you would be redirected to the main store.');
+      window.location.href = '/';
+    });
+  }
+
+  // Cart counter for consistency (demo)
+  let cartCount = 0;
+  const cartSpan = document.querySelector('.header-icons button:last-child span');
+  if (cartSpan) {
+    cartSpan.innerText = cartCount;
+  }
+  const cartIcon = document.querySelector('.header-icons button:last-child');
+  if (cartIcon) {
+    cartIcon.addEventListener('click', () => {
+      alert('Your cart is currently empty. Discover timeless pieces at MaisonCart ✨');
+    });
+  }
+
+  // Optional: console log for developer awareness
+  console.log("MaisonCart | Privacy Policy page loaded — we value your privacy.");
+</script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>MaisonCart | About Us — Story & Craftsmanship</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fefaf5;
+      color: #1e1a17;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* header */
+    .site-header {
+      background-color: #ffffffdd;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #f0e4d8;
+      padding: 16px 0;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo a {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      background: linear-gradient(135deg, #b57c48, #6e3b1c);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2c241f;
+      transition: color 0.2s;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #b45a2b;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-icons button {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: #2c241f;
+      transition: transform 0.1s ease;
+    }
+
+    .header-icons button:hover {
+      transform: scale(1.05);
+      color: #b45a2b;
+    }
+
+    /* about main content */
+    .about-main {
+      flex: 1;
+    }
+
+    /* hero story section */
+    .story-hero {
+      background: linear-gradient(120deg, #f5ede5 0%, #fdf5ef 100%);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .story-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      font-weight: 600;
+      color: #2b211c;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .story-hero .tagline {
+      font-size: 1.25rem;
+      color: #6b4c35;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .divider {
+      width: 80px;
+      height: 2px;
+      background: #d8bfa8;
+      margin: 32px auto 0;
+    }
+
+    /* intro narrative */
+    .intro-narrative {
+      padding: 80px 0 60px;
+    }
+
+    .two-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .col-text {
+      flex: 1.2;
+    }
+
+    .col-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: #2b211c;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .col-text p {
+      color: #4a3e37;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+
+    .col-image {
+      flex: 1;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+    }
+
+    .col-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .col-image:hover img {
+      transform: scale(1.02);
+    }
+
+    /* values section */
+    .values-section {
+      background: #fff9f5;
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: #2b211c;
+      margin-bottom: 50px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 36px;
+    }
+
+    .value-card {
+      background: white;
+      padding: 36px 28px;
+      border-radius: 28px;
+      text-align: center;
+      transition: all 0.25s;
+      border: 1px solid #f0e2d8;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.02);
+    }
+
+    .value-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 28px -12px rgba(0,0,0,0.1);
+    }
+
+    .value-icon {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    .value-card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      color: #2c241f;
+    }
+
+    .value-card p {
+      color: #5f4e42;
+      line-height: 1.5;
+    }
+
+    /* artisan spotlight */
+    .artisan-spotlight {
+      padding: 80px 0;
+      background: #f5efe9;
+    }
+
+    .spotlight-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .spotlight-img {
+      flex: 1;
+      border-radius: 32px;
+      overflow: hidden;
+    }
+
+    .spotlight-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .spotlight-text {
+      flex: 1;
+    }
+
+    .spotlight-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .spotlight-text .quote {
+      font-style: italic;
+      font-size: 1.2rem;
+      border-left: 3px solid #b5672e;
+      padding-left: 24px;
+      margin: 24px 0;
+      color: #4e3a2c;
+    }
+
+    /* team / founder */
+    .founder-section {
+      padding: 70px 0;
+    }
+
+    .founder-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      background: white;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px -15px rgba(0,0,0,0.05);
+      border: 1px solid #f0e2d8;
+    }
+
+    .founder-img {
+      flex: 1;
+      min-height: 350px;
+    }
+
+    .founder-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .founder-bio {
+      flex: 1.5;
+      padding: 48px 48px 48px 0;
+    }
+
+    .founder-bio h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .founder-title {
+      color: #b5672e;
+      font-weight: 500;
+      margin-bottom: 24px;
+      letter-spacing: 0.3px;
+    }
+
+    .founder-bio p {
+      color: #4a3e37;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    /* cta banner */
+    .cta-banner {
+      background: #e7dbd0;
+      margin: 40px 0 70px;
+      border-radius: 48px;
+      text-align: center;
+      padding: 64px 32px;
+    }
+
+    .cta-banner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .cta-banner .btn-cta {
+      background: #a7582a;
+      border: none;
+      padding: 14px 38px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: white;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .btn-cta:hover {
+      background: #834421;
+    }
+
+    /* footer */
+    .footer {
+      background: #1e1612;
+      color: #ddd0c8;
+      padding: 48px 0 32px;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .footer-col p {
+      margin: 12px 0;
+    }
+
+    .footer-col h4 {
+      color: #f5e2d6;
+      margin-bottom: 14px;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #30221c;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 800px) {
+      .story-hero h1 {
+        font-size: 2.5rem;
+      }
+      .two-columns {
+        flex-direction: column;
+      }
+      .founder-bio {
+        padding: 32px;
+      }
+      .founder-card {
+        flex-direction: column;
+      }
+      .nav-links {
+        gap: 20px;
+      }
+      .header-inner {
+        justify-content: center;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="#">MaisonCart</a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="header-icons">
+      <button aria-label="Search">🔍</button>
+      <button aria-label="Account">👤</button>
+      <button aria-label="Cart">🛒<span style="font-size:0.7rem; margin-left:4px;">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="about-main">
+  <!-- Hero story section -->
+  <section class="story-hero">
+    <div class="container">
+      <h1>Where Heritage<br>Meets Heart</h1>
+      <p class="tagline">MaisonCart is not just a store — it's a gathering of stories, slow craftsmanship, and objects that bring warmth to modern life.</p>
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- intro narrative + image -->
+  <section class="intro-narrative">
+    <div class="container two-columns">
+      <div class="col-text">
+        <h2>Our journey began with a simple belief: home should feel like poetry.</h2>
+        <p>Founded in 2018 by designer Élodie Moreau and curator James Cartwright, MaisonCart was born from a shared desire to reconnect with authentic, soulful design. Disillusioned by mass-produced uniformity, we traveled from the French countryside to Japanese pottery villages, seeking artisans who pour their spirit into every creation.</p>
+        <p>Today, MaisonCart collaborates with over 40 independent ateliers across Europe, Asia, and South America. Our collection marries clean silhouettes with unexpected textures — linen drapes that soften with age, oak tables carved by third-generation woodworkers, and ceramics painted under morning light in the Tuscan hills.</p>
+        <p>We believe that the most beautiful spaces are layered with meaning. Every piece we offer carries a signature of its maker, a note of imperfection that makes it unmistakably human.</p>
+      </div>
+      <div class="col-image">
+        <img src="https://images.pexels.com/photos/4392275/pexels-photo-4392275.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2" alt="MaisonCart founders in artisan workshop" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- values / pillars -->
+  <section class="values-section">
+    <div class="container">
+      <h2 class="section-title">Our Pillars</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🌿</div>
+          <h3>Mindful Materials</h3>
+          <p>Sustainably sourced wood, recycled metals, organic linens — we prioritize low-impact materials that age gracefully.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Fair Craft</h3>
+          <p>Every artisan receives fair wages, long-term partnerships, and creative recognition. We visit each workshop annually.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">✨</div>
+          <h3>Timeless Design</h3>
+          <p>No fast trends. Our objects are made to be cherished for decades, transcending seasons and fads.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📖</div>
+          <h3>Story Led</h3>
+          <p>We share the journey behind each piece — the hands, the history, the techniques that shaped it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- artisan spotlight -->
+  <section class="artisan-spotlight">
+    <div class="container spotlight-inner">
+      <div class="spotlight-img">
+        <img src="https://images.pexels.com/photos/4207916/pexels-photo-4207916.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2" alt="Artisan working on ceramic vase" loading="lazy">
+      </div>
+      <div class="spotlight-text">
+        <h2>Voices of the Workshop</h2>
+        <p>Meet Yuna Kim, a fourth-generation potter from Icheon, Korea. Her family’s studio has crafted moon jars for over a century. At MaisonCart, Yuna’s vessels sit alongside Moroccan terracotta and handwoven Belgian tapestries — a quiet dialogue between traditions.</p>
+        <div class="quote">"Clay remembers every touch. When you hold one of our pieces, you're holding patience, failure, and discovery — the honest rhythm of making." — Yuna Kim</div>
+        <p>We champion these unsung masters. Through our "Artisan Spotlight" series, we invite you into their studios, sharing videos and interviews that celebrate slow creation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- founder story -->
+  <section class="founder-section">
+    <div class="container">
+      <div class="founder-card">
+        <div class="founder-img">
+          <img src="https://images.pexels.com/photos/5217776/pexels-photo-5217776.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2" alt="Founder Élodie Moreau in her home library" loading="lazy">
+        </div>
+        <div class="founder-bio">
+          <h3>Élodie Moreau</h3>
+          <div class="founder-title">Co-Founder & Creative Director</div>
+          <p>Élodie grew up between a rustic farmhouse in Provence and a minimalist apartment in Copenhagen. That duality — rustic warmth meets clean lines — defines MaisonCart's aesthetic. After studying design at the Royal College of Art, she spent a decade as a buyer for concept stores, but always felt something was missing: a direct connection to makers.</p>
+          <p>In 2018, she left the corporate world with a backpack and a notebook, traveling to remote workshops. "I wanted to create a platform that doesn't strip away identity. We're curators of stories, not just inventory."</p>
+          <p>Today, Élodie leads our curation team, personally selecting every object that arrives in our collection. Her favorite piece? A hand-stitched linen throw from a small collective in Lithuania.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- community & commitment -->
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Join the MaisonCart Circle</h2>
+      <p style="max-width: 550px; margin: 0 auto;">More than a newsletter — receive artisan stories, early access to collections, and a community that celebrates living with intention.</p>
+      <button class="btn-cta" id="newsletterTrigger">Subscribe to our letters →</button>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>MaisonCart</h4>
+      <p>Timeless design for modern living.</p>
+    </div>
+    <div class="footer-col">
+      
+  </div>
+  <div class="container copyright">
+    <p>© 2026 MaisonCart — Where heritage meets heart. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- simple toast for newsletter -->
+<div id="toastMsg" style="position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #2c241fe6; backdrop-filter: blur(8px); color: white; padding: 10px 24px; border-radius: 60px; font-weight: 500; opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 200; font-size: 0.9rem;">✨ Thanks for subscribing</div>
+
+<script>
+  // Cart counter and simple demo interactions
+  let cartCount = 0;
+  const cartSpan = document.querySelector('.header-icons button:last-child span');
+  if (cartSpan) cartSpan.innerText = cartCount;
+  
+  const cartIcon = document.querySelector('.header-icons button:last-child');
+  if (cartIcon) {
+    cartIcon.addEventListener('click', () => {
+      alert('Your cart is currently empty. Explore timeless pieces at MaisonCart ✨');
+    });
+  }
+
+  // Newsletter subscription mockup with toast
+  const newsletterBtn = document.getElementById('newsletterTrigger');
+  const toast = document.getElementById('toastMsg');
+  
+  function showToastMessage(msg) {
+    toast.textContent = msg;
+    toast.style.opacity = '1';
+    setTimeout(() => {
+      toast.style.opacity = '0';
+    }, 2000);
+  }
+  
+  if (newsletterBtn) {
+    newsletterBtn.addEventListener('click', () => {
+      // simulate email collection dialog (simple)
+      const email = prompt("Join our circle — enter your email address:", "hello@maisoncart.com");
+      if (email && email.includes('@') && email.includes('.')) {
+        showToastMessage("🎉 Welcome to MaisonCart Letters! Check your inbox.");
+      } else if (email) {
+        showToastMessage("📧 Please enter a valid email address.");
+      }
+    });
+  }
+  
+  // simple hover effect for value cards
+  console.log("MaisonCart About Us — celebrating craftsmanship");
+</script>
+</body>
+</html>
